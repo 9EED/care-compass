@@ -1,0 +1,30 @@
+html {
+    background: white;
+    color: var(--color);
+    font-family: 'Roboto', cursive;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.frosted-glass {
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+}
+.frosted-panel {
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 10px;
+    overflow-y: auto;
+}
+#preview img{ /*has to be here so stupid compiler doesnt delete it*/
+    width: 100%;
+}
+*{
+    --color: #080808;
+    box-sizing: border-box;
+}
